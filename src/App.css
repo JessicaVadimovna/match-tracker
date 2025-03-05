@@ -1,0 +1,128 @@
+/* src/App.css */
+body {
+  background-color: rgba(9, 9, 9, 1);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: rgba(9, 9, 9, 1);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Выравниваем по верхнему краю */
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  align-items: flex-start; 
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+
+  font-family: Tactic Sans;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0%;
+
+}
+
+.loader {
+  text-align: center;
+  color: #888;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 600px;
+  font-size: 16px;
+}
+
+.error {
+  color: #ff4444;
+  font-size: 14px;
+}
+
+.refresh-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #EB0237;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.refresh-button:hover {
+  background-color: #A01131;
+}
+
+.refresh-button:active {
+  background-color: #701328;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.status-filter {
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.status-filter:focus {
+  outline: none;
+}

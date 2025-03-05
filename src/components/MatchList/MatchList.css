@@ -1,0 +1,152 @@
+.match-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .match-wrapper {
+    width: 100%;
+  }
+  
+  .match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #0F1318 0%, #0A0E12 100%);
+    padding: 10px 35px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .match:hover {
+    background: linear-gradient(90deg, #0B0F13 0%, #0F1318 52.4%, #0A0E12 100%);
+  }
+
+  .match:active {
+    background: linear-gradient(90deg, #0A0E12 0%, #0F1318 100%);
+  }
+  
+  .team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .team1 {
+    justify-content: flex-start;
+  }
+  
+  .team2 {
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .expand-icon {
+    font-size: 14px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    color: #888;
+  }
+  
+  .expand-icon.expanded {
+    transform: rotate(180deg);
+  }
+  
+  .score {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .status {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .status.live {
+    background-color: #43AD28;
+    color: white;
+  }
+  
+  .status.finished {
+    background-color: #EB0237;
+    color: white;
+  }
+  
+  .status.match-preparing {
+    background-color: #888;
+    color: white;
+  }
+  
+  .team-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+  
+  .match-details {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 10px 35px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .team-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 48%;
+    background-color: rgba(16, 19, 24, 1);
+  }
+  
+  .players-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .player {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .player-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+  
+  .kills {
+    margin-left: 5px;
+    color: #888;
+    font-size: 12px;
+  }
