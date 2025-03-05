@@ -6,8 +6,8 @@ import MatchList from './components/MatchList/MatchList';
 import './App.css';
 
 // Прямые пути к изображениям в папке public/img
-const teamIcon = '/img/icon.png';
-const userAvatar = '/img/avatar_global.png';
+const teamIcon = './img/icon.png';
+const userAvatar = './img/avatar_global.png';
 
 const fetcher = (url) => axios.get(url).then((res) => res.data.data.matches);
 
